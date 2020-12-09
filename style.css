@@ -1,0 +1,450 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	all: unset;
+}
+
+.header-container{
+	display: flex;
+	background-color: #d7d7d7;
+}
+
+.menu-container{
+	display: flex;
+	margin-left: 20px;
+	margin-top: 25px;
+}
+
+.menu{
+	margin-left: 30px;
+}
+
+.effect::after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 3px;
+	background: #000000;
+	transition: width .5s;
+}
+
+.effect:hover{
+	font-weight: bold;
+}
+
+.effect:hover::after{
+	width: 100%;
+	transition: width .3s;
+}
+
+.effects{
+	font-size: 15px;
+	color: #151515;
+	text-decoration: none;
+	font-weight: bold ;
+	text-align: center;
+	font-family: 'Jost';
+}
+
+
+.logo-container{
+	margin-top: 25px;
+	margin-left: 250px;
+}
+
+.tool-container{
+	display: flex;
+	margin-left: 400px;
+	margin-top: 25px;
+	justify-content: center;
+	align-items: center;
+}
+
+.tools{
+	width: 30px;
+	height: 30px;
+	font-size: 15px;
+	text-decoration: none;
+	margin-left: 25px;
+	position: relative;
+}
+
+.tools::before{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.tools::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: 4px inset #d7d7d7;
+	box-sizing: border-box;
+	border-radius: 50%;
+}
+
+.tools:hover::after{
+	animation: ro 3s linear infinite; 
+}
+
+@keyframes ro{
+	0%{
+		transform: rotate(0);
+	}
+	50%{
+		border: 4px inset #838b75;
+	}
+	100%{
+		transform: rotate(360deg);
+		border: 4px inset #988177;
+	}
+}
+
+.number{
+	width: 17px;
+	height: 17px;
+	line-height: 17px;
+	border-radius: 100%;
+	font-size: 10px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	background: white;
+	margin-left: 3px;
+}
+
+.section-container{
+	background-color: #d7d7d7;
+	padding-top: 150px;
+	padding-left: 250px;
+	padding-bottom: 100px;
+}
+
+.text{
+	font-size: 72px;
+	font-weight: bold;
+	color: #151515;
+	font-family: 'Jost';	
+}
+
+.main-container{
+	margin-bottom: 100px;
+}
+
+.product-container{
+	display: flex;
+	margin-top: 30px;
+	padding-bottom: 100px;
+}
+
+.product1{
+	background-color: #d7d7d7;
+	width: 600px;
+	height: 290px;
+	margin-left: 50px;
+	background-image: url('C:/Users/tom18/OneDrive/Desktop/HCJ/Images/mid-season.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.product2{
+	background-color: #d7d7d7;
+	width: 600px;
+	height: 290px;
+	margin-left: 10px;
+	background-image: url('C:/Users/tom18/OneDrive/Desktop/HCJ/Images/summer-clothes.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.product3{
+	background-color: #d7d7d7;
+	width: 600px;
+	height: 290px;
+	margin-left: 10px;
+	margin-right: 50px;
+	background-image: url('C:/Users/tom18/OneDrive/Desktop/HCJ/Images/accesories.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.name{
+	font-size: 36px;
+	font-weight: bold;
+	color: #151515;
+	font-family: 'Jost';
+}
+
+.name1{
+	width: 181px;	
+	height: 71px;
+	margin: 60px 0 0 61px;
+}
+
+.name2{
+	width: 144px;	
+	height: 70px;
+	margin: 60px 0 0 61px;
+}
+
+.name3{
+	width: 240px;	
+	height: 73px;
+	margin: 60px 0 0 61px;
+}
+
+.shopping{
+	margin-top: 40px;
+	margin-left: 60px;
+	float: left;
+	font-weight: 700;
+}
+
+.selection-container{
+	display: flex;
+	margin-left: 450px;
+}
+
+.selection{
+	padding-left: 20px;
+	padding-bottom: 50px;
+	font-size: 24px;
+	color: #151515;
+	font-weight: 500;
+	font-family: "Jost";
+}
+
+.item-container{
+	display: flex;
+}
+
+.item{
+	width: 340px;
+	height: 347px;
+	background-color: #d7d7d7;
+}
+
+.item2{
+	margin-left: 30px;
+	background-image: url('C:/Users/tom18/OneDrive/Desktop/HCJ/Images/bag.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.item3{
+	margin-left: 30px;
+	background-image: url('C:/Users/tom18/OneDrive/Desktop/HCJ/Images/raincoat.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.item4{
+	margin-left: 30px;
+	background-image: url('C:/Users/tom18/OneDrive/Desktop/HCJ/Images/backpack.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.item1{
+	margin-left: 50px;
+	background-image: url('C:/Users/tom18/OneDrive/Desktop/HCJ/Images/shoes.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.item5{
+	margin-left: 30px;
+	margin-right: 50px;
+	background-image: url('C:/Users/tom18/OneDrive/Desktop/HCJ/Images/shirt.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.description-container{
+	display: flex;
+	padding-bottom: 80px;
+}
+
+.description2{
+	margin-left: 30px;
+	width: 340px;
+}
+
+.description3{
+	margin-left: 30px;
+	width: 340px;
+}
+
+.description4{
+	margin-left: 30px;
+	width: 340px;
+}
+
+.description1{
+	margin-left: 50px;
+	width: 340px;
+}
+
+.description5{
+	width: 340px;
+	margin-left: 30px;
+	margin-right: 40px;
+}
+
+.clothes{
+	font-size: 15px; 
+	color: #151515;
+	font-weight: 500; 
+	font-family: 'Jost'; 
+	margin-top: 10px;
+}
+
+.adding{
+	display: flex;
+}
+
+.heart{
+	color: black;
+	animation: pulse 2s ease-in-out infinite;
+}
+
+.hearts{
+	color: red;
+	animation: pulse 2s ease-in-out infinite;
+}
+
+
+@keyframes pulse {
+	0% { 
+		transform: scale(1); 
+	}
+	50% { 
+		transform: scale(1.3); 
+	}
+	100% { 
+		transform: scale(1); 
+	}
+}
+
+.extra-container{
+	display: flex;
+}
+
+.extra{
+	width: 960px;
+	height: 420px;
+	padding-top: 160px;
+}
+
+.extra1{
+	background-color: #f08c78;
+}
+
+.extra2{
+	background-color: #6f8197;
+}
+
+.extra-info{
+	color: #ffffff; 
+	font-weight: 500; 
+	font-family: 'Jost'; 
+	text-align: center;
+}
+
+.extra-info2{
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 300px;
+	font-size: 15px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .extra-info2::after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 3px;
+	background: #000000;
+	transition: width .5s;
+}
+
+.extra-info2:hover{
+	font-weight: bold;
+}
+
+.extra-info2:hover::after{
+	width: 100%;
+	transition: width .3s;
+}
+
+.nav-container{
+	display: flex;
+}
+
+.navi{
+	font-size: 16px;
+	color: #151515;
+	font-weight: bold;
+	font-family: "Jost";
+	margin-left: 150px;
+}
+
+.navigation-container{
+	margin-top: 30px;
+}
+
+.navigation{
+	padding-top: 10px;
+	list-style-type: none;
+	font-size: 13px;
+	color: #454545;
+	font-weight: 500;
+	font-family: "Jost";
+}
+
+.footer-container{
+	display: flex;
+}
+
+.input-data{
+	width: 550px;
+    padding-right: 50px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.button-data{
+	margin-left: -70px;
+    color: black;
+    border: 0;
+}
+
+/* .adding{
+	display: none;
+}
+
+.clothes:hover + .adding{
+	display: flex;
+} */
