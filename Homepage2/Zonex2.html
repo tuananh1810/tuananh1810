@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=width-device, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -173,7 +174,7 @@
 				<div class="col-3">
 					<img src="../Images/fire.png" alt=""><span>HOT</span>
 					<p>Tailored indigo jumpsuit</p>
-					<p class="money"><i class="fas fa-dollar-sign"></i>128.00<span style="padding-left: 20px; text-decoration: line-through;" class="sale"><i class="fas fa-dollar-sign"></i>128.00</span></p>
+					<p class="money"><i class="fas fa-dollar-sign"></i>128.00<span style="padding-left: 20px; text-decoration: line-through;" class="sale"><i class="fas fa-dollar-sign"></i>165.00</span></p>
 					<div class="buying">
 						<p class="add">ADD TO CART</p>
 						<div class="icon-container">
@@ -208,28 +209,141 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 
-		</main>
-	</div>
-	<script>
-		$('.owl-carousel').owlCarousel({
-			loop:true,
-			margin:20,
-			nav:true,
-			responsive:{
-				0:{
-					items:1
-				},
-				600:{
-					items:3
-				},
-				1000:{
-					items:5
+			<div class="row item">
+				<div class="col text-center"><button type="button" class="button-container"><p>All Products</button></div>
+				</div>
+
+				<div class="row">
+					<div class="col-5">
+						<div class="new-product">
+							<p class="dress">Sleeve denim <br/>mini dress</p>
+							<p class="shopping effect">Shop now</p>
+						</div>
+					</div>
+					<div class="col-7">
+						<div class="row" style="padding-bottom: 20px;">
+							<div class="col-6">
+								<div class="new-product1">
+									<p class="dress">Back to school!</p>
+									<p class="shopping effect">Shop now</p>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="new-product1">
+									<p class="dress">Jewelry for night</p>
+									<p class="shopping effect">Shop now</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col">
+								<div class="new-product2">
+									<p class="dress">Sunglasses for you</p>
+									<p class="shopping effect">Shop now</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="newsletter-container">
+					<p class="newsletter text-center">Our newsletter</p>
+					<p class="text-center">Join out list and get 15% off your first purchase</p>
+					<div class="center">
+						<input type="email" placeholder="Email Address" class="input-data" required>
+						<input class="subcribe-data" type="submit" value="Subscribe">
+					</div>
+				</div>
+				<p class="text-center spam">*Don't worry we don't spam</p>
+			</main>
+
+			<footer class="footer-container">
+				<div class="row footer">
+					<div class="col-3 text-left">
+						<div class="social">
+							<i class="fab fa-twitter fa-lg icons"></i>
+							<i class="fab fa-facebook-square fa-lg icons"></i>
+							<i class="fab fa-instagram-square fa-lg icons"></i>
+							<i class="fab fa-youtube fa-lg icons"></i>
+						</div>
+					</div>
+
+					<div class="col-5 text-center">
+						<span class="policy">Returns Policy</span>
+						<span class="policy">Privacy Policy</span>
+						<span class="policy">Terms and Conditions</span>
+					</div>
+
+					<div class="col-4 text-center">
+						<div class="row">
+							<div class="col-6">
+								<span class="national">
+									Currency
+								</span>	
+								<span class="dropdown">
+									<button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span>USD</span>
+									</button>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item" href="#">EUR</a>
+										<a class="dropdown-item" href="#">VND</a>
+										<a class="dropdown-item" href="#">CNY</a>
+									</div>
+								</span>
+							</div>
+
+							<div class="col-6">
+								<span class="national">
+									Language
+								</span>	
+								<span class="dropdown">
+									<button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span>ENGLISH</span>
+									</button>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item" href="#">GERMANY</a>
+										<a class="dropdown-item" href="#">VIETNAMESE</a>
+										<a class="dropdown-item" href="#">CHINESE</a>
+									</div>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+						<div class="col text-left">
+							<i class="fas fa-copyright fa-lg icons"></i><span>2019 Zonex All rights reserved</span>	
+ 						</div>
+					<div class="col"></div>
+					<div class="col text-center">
+						<span class="credit"><i class="fab fa-cc-mastercard fa-2x"></i></span>
+						<span class="credit"><i class="fab fa-cc-visa fa-2x"></i></span>
+						<span class="credit"><i class="fab fa-cc-paypal fa-2x"></i></span>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script>
+			$('.owl-carousel').owlCarousel({
+				loop:true,
+				margin:20,
+				nav:true,
+				responsive:{
+					0:{
+						items:1
+					},
+					600:{
+						items:3
+					},
+					1000:{
+						items:5
+					}
 				}
-			}
-		})
-	</script>
-</body>
-</html>
+			})
+		</script>
+	</body>
+	</html>
