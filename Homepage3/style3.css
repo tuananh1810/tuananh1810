@@ -137,4 +137,45 @@ main{
 .product3{
 	grid-area: C;
 	background-color: #a9a9a9;
+	position: relative;
 }
+
+.text1{
+	position: absolute;
+	left: 50%;
+ 	top: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+.want{
+	background-color: #000000;
+	text-align: center;
+	font-size: 15px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.girl{
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.more1{
+	text-align: center;
+	font-size: 15px;
+	color: #000000;
+}
+
+/* .product4{
+	grid-area: D;
+	background-color: #a9a9a9;
+	padding: 100px 0 100px 0;
+	margin-right: 20px;
+}
+
+.product5{
+	grid-area: E;
+	background-color: #a9a9a9;
+} */
