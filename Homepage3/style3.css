@@ -1,0 +1,140 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: "Jost";
+}
+
+.logo{
+	padding: 30px 0 42px 0;
+}
+
+p{
+	font-size: 13px;
+	color: #858585;
+	font-weight: 500;
+	margin: 0;
+}
+
+.phone{
+	font-size: 15px;
+	color: #151515;
+	font-weight: bold;
+}
+
+.col-2{
+	padding: 0;
+}
+
+.effect{
+	font-size: 15px;
+	color: #151515;
+	font-weight: bold;
+	padding-left: 20px;
+}
+
+.effect::after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 3px;
+	background: #000000;
+	transition: width .5s;
+}
+
+.effect:hover::after{
+	width: 100%;
+	transition: width .3s;
+}
+
+.tool{
+	padding-left: 20px;
+}
+
+.col-4 a{
+	color: #151515;
+	text-decoration: none;
+}
+
+main{
+	margin-top: 30px;
+}
+
+/* main .row{
+	margin-bottom: 31px;
+} */
+
+.product{
+	display: grid;
+	flex-wrap: wrap;
+	grid-auto-flow: column;
+	grid-template-areas: 
+	"A B"
+	"A C";
+	padding-bottom: 100px;
+}
+
+.product1{
+	grid-area: A;
+	background-color: #a9a9a9;
+	padding: 200px 0 200px 0;
+	text-align: center;
+	margin-right: 20px;
+}
+
+.SS19{
+	font-size: 48px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.shop{
+	display: inline-block;
+	color: #ffffff;
+	font-size: 15px;
+	border: 3px solid #ffffff;
+	padding: 18px 38px;
+	margin-top: 20px;
+}
+
+.product2{
+	grid-area: B;
+	background-color: #a9a9a9;
+	margin-bottom: 20px;	
+	position: relative;
+}
+
+.text{
+	position: absolute;
+	left: 50%;
+ 	top: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+.basic{
+	text-align: center;
+	font-size: 15px;
+	color: #151515;
+	font-weight: bold;
+}
+
+.arrival{
+	text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.more{
+	text-align: center;
+	font-size: 15px;
+	color: #ffffff;
+}
+
+.product3{
+	grid-area: C;
+	background-color: #a9a9a9;
+}
