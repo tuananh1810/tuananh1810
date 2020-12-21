@@ -285,7 +285,7 @@ main .row{
 	font-weight: 500;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
 	.item1{
 		display: none;
 	}
