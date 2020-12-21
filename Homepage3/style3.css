@@ -286,7 +286,7 @@ main .row{
 }
 
 @media (max-width: 600px) {
-	.item1{
+	.items1{
 		display: none;
 	}
 }
