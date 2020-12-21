@@ -284,3 +284,9 @@ main .row{
 	color: #000000; 
 	font-weight: 500;
 }
+
+@media (max-width: 375px) {
+	.item1{
+		display: none;
+	}
+}
